@@ -1,0 +1,11 @@
+--- origsrc/projectM-libvisual-1.2.0/actor_projectM.cpp	2008-06-11 22:40:08.000000000 -0500
++++ src/projectM-libvisual-1.2.0/actor_projectM.cpp	2009-09-17 20:38:57.071652800 -0500
+@@ -209,7 +209,7 @@ extern "C" int lv_projectm_events (VisPl
+  * we aren't with projectm, so just ignore :) */
+ extern "C" VisPalette *lv_projectm_palette (VisPluginData *plugin)
+ {
+-	return NULL;
++	return (VisPalette*)NULL;
+ }
+ 
+ /* This is where the real rendering happens! This function is what we call, many times

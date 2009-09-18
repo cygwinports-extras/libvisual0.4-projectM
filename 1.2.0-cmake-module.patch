@@ -1,0 +1,9 @@
+--- origsrc/projectM-libvisual-1.2.0/CMakeLists.txt	2008-06-11 22:40:08.000000000 -0500
++++ src/projectM-libvisual-1.2.0/CMakeLists.txt	2009-09-17 20:39:24.144566400 -0500
+@@ -1,5 +1,5 @@
+ PROJECT(projectM_libvisual)
+-ADD_LIBRARY(projectM_libvisual SHARED actor_projectM.cpp lvtoprojectM.h ConfigFile.h ConfigFile.cpp)
++ADD_LIBRARY(projectM_libvisual MODULE actor_projectM.cpp lvtoprojectM.h ConfigFile.h ConfigFile.cpp)
+ 
+ INCLUDE(FindPkgConfig.cmake)
+ 

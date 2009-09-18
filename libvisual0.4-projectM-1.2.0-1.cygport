@@ -1,0 +1,9 @@
+ORIG_PN="projectM-libvisual"
+
+inherit cmake
+
+DESCRIPTION="Milkdrop-compatible plugin for libvisual"
+HOMEPAGE="http://projectm.sourceforge.net/"
+SRC_URI="mirror://sourceforge/projectm/${ORIG_PN}-${PV}.tar.bz2"
+PATCH_URI="1.2.0-cmake-module.patch
+           1.2.0-gcc43.patch"
